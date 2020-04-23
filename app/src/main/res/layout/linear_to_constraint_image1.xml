@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        app:layout_constraintVertical_chainStyle="spread"
+        android:id="@+id/A"
+        android:text="A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#0E0E0E"
+        android:background="#f20"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/B"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:ignore="MissingConstraints,UnknownId" />
+    <TextView
+        android:id="@+id/B"
+        android:text="B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#0E0E0E"
+        android:background="#4CAF50"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/A"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/C"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:ignore="MissingConstraints,UnknownId" />
+    <TextView
+        android:id="@+id/C"
+        android:text="C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#0E0E0E"
+        android:background="#8BC34A"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/B"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/D"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:ignore="MissingConstraints,UnknownId" />
+    <TextView
+        android:id="@+id/D"
+        android:text="D"
+        android:textSize="20sp"
+        android:textColor="#0E0E0E"
+        android:background="#2196F3"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/C"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/gui"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/A1"
+        android:text="A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#0E0E0E"
+        android:background="#FAEE8C"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/D"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/B1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:ignore="NotSibling" />
+    <TextView
+        android:id="@+id/B1"
+        android:text="B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#0E0E0E"
+        android:background="#C8C5C5"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/D"
+        app:layout_constraintLeft_toRightOf="@+id/A1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/C1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:ignore="NotSibling,UnknownId" />
+    <TextView
+        android:id="@+id/C1"
+        android:text="C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#0E0E0E"
+        android:background="#7E4ED5"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/D"
+        app:layout_constraintLeft_toRightOf="@+id/B1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/D1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:ignore="NotSibling" />
+    <TextView
+        android:id="@+id/D1"
+        android:text="D"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#0E0E0E"
+        android:background="#9C27B0"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/D"
+        app:layout_constraintLeft_toRightOf="@+id/C1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:ignore="NotSibling" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gui"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</android.support.constraint.ConstraintLayout>
